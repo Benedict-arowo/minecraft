@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&family=Ropa+Sans&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="MinecraftColorCodes3-7.js"></script>
+    <title>MSS</title>
+</head>
+<body>
+    <header>
+        <h1>Minecraft Server Status</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="serverStatus">
+                <div class="offline">
+                    <p>Server is offline or ip address is invalid</p>
+                </div>
+                <div class="container">
+                    <img src="https://www.superherodb.com/pictures2/portraits/10/100/639.jpg" alt="">
+                    <div class="serverContent">
+                        <h2>Hypixel</h2>
+                        <div id="serverMotd"></div>
+                    </div>
+                    <div class="serverStats">
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+            <form action="">
+
+                <div class="forms ipAddress">
+                    <label for="ipAddress">Ip Address</label>
+                    <input type="text" placeholder="eg: hypixel.net" id="ipAddress">
+                </div>
+
+                <div class="footer">
+                    <div class="forms version">
+                        <div class="java">
+                            <label for="java">Java</label>
+                            <input class="radioBtnVersion" type="radio" name="version" id="java" checked>
+                        </div>
+                        <div class="bedrock">
+                            <label for="bedrock">Bedrock</label>
+                            <input class="radioBtnVersion" type="radio" name="version" id="bedrock">
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button id="submitBtn" type="button" >Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

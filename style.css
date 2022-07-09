@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(108.5deg, #6B30E8 13.08%, rgba(5, 115, 150, 0.53) 86.88%, #460A6B 95.27%);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header {
+    height: 60px;
+    display: flex;
+    text-shadow: 2px 3px #000000b2;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: white;
+    font-family: 'Poppins', 'Ropa Sans', sans-serif;
+}
+
+main > .container {
+    display: flex;
+    padding: 20px 60px;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    margin-top: 30px;
+}
+
+form label {
+    font-family: 'Ropa Sans', sans-serif;
+    color: white;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.forms > input {
+    width: max(100px, 300px);
+    background: #FFFFFF;
+    border: 1px solid #7B7B7B;
+    box-shadow: inset 7px 4px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.forms > input::placeholder {
+    font-family: 'Ropa Sans', sans-serif;
+    color: rgba(128, 128, 128, 0.596);
+}
+
+.version {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100px;
+}
+
+.version input{
+    accent-color: #A981FF;
+}
+.java, .bedrock {
+    justify-content: start;
+    display: flex;
+    gap: 5px;
+    flex-direction: row-reverse;
+}
+
+.java > label, .bedrock > label {
+    color: black;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submitBtn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: white;
+    color: #A981FF;
+    border: none;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 1.1rem;
+}
+
+.serverStatus .container, .offline {
+    width: max(200px, 720px);
+    background-color: rgb(36, 36, 36);
+    padding: 10px 30px;
+    display: flex;
+    font-family: 'Ropa Sans', sans-serif;
+    height: 150px;
+    border-radius: 20px;
+    gap: 20px;
+    display: none;
+    box-shadow: 10px 0 30px 1px black;
+}
+
+.serverStatus img {
+    width: 120px;
+    height: 120px;
+    align-self: center;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.serverContent {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-self: center;
+}
+
+.serverContent h2 {
+    color: white;
+    text-transform: uppercase;
+}
+
+#serverMotd {
+    width: 350px;
+    text-align: center;
+
+}
+
+.serverStats {
+    color: white;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.offline p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.offline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.show {
+    display: flex !important;
+}
